@@ -8,13 +8,11 @@
 //  перевірки коректності її роботи.У консоль будуть виведені результати її роботи.
 
 const sortByDescendingFriendCount = (users) => {
-  const sortedByFriends = [];
   const sorted = users.toSorted(
     (firstUser, secondUser) =>
       secondUser.friends.length - firstUser.friends.length
   );
-  sortedByFriends.push(sorted);
-  return sortedByFriends;
+  return sorted;
 };
 
 console.log(
